@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3238b5cc-91d6-4208-98be-40310ad4a9e2" name="app" url="http://serverweb.cbb.edu.pe/sistemas/app/">
+        <fileTransfer host="192.168.121.6" port="381" rootFolder="/sistemas/app" accessType="SFTP" username="servercbb">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="381" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

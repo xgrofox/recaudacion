@@ -1,0 +1,1 @@
+<?phprequire_once "Session.php";class SecurityPassport{    // Verifica si la session es valida.    public function isSessionActive()    {        $retorno = true;        if (Session::getAttribute("beanUsuario") != NULL)            // Session activa devuelve falso            $retorno = false;        return $retorno;    }}?>

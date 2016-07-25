@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^tramite/(.*)$ ./sistemas/app/vista/recaudacion/$1_tramite.php [NC,L]
+RewriteRule ^concesionario/(.*)$ ./sistemas/app/vista/recaudacion/$1_concesionario.php [NC,L]
+</IfModule>

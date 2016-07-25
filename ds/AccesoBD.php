@@ -1,0 +1,1 @@
+<?phprequire_once "../adodb/adodb.inc.php";class AccesoBD{    public function getInstancia()    {        $SERVER = "192.168.40.3";        $USER = "colegio";        $PASS = "Eed2vulo";        $DATABASE = "db_colegio";        $cn = ADONewConnection('mysql');        //$cn->debug = true;        $cn->Connect($SERVER, $USER, $PASS, $DATABASE);        return $cn;    }}
